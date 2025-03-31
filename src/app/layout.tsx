@@ -12,11 +12,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Juan Castillo',
   description: 'Front End Engineer',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
-  },
+  icons: [
+    { rel: 'icon', url: '/favicon.ico' },
+    { rel: 'apple-touch-icon', url: '/favicon.ico' },
+    { rel: 'shortcut icon', url: '/favicon.ico' }
+  ]
 }
 
 export default function RootLayout({
@@ -27,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}
