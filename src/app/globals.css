@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --blue: #0f172a;
+  --blue-light: #1e293b;
+  --slate: #64748b;
+  --slate-light: #94a3b8;
+  --white: #ffffff;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-link {
+  color: var(--slate);
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--white);
+}
+
+.section-heading {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  color: var(--slate-light);
+  background-color: transparent;
+  font-family: monospace;
+  font-size: 0.85rem;
+  padding: 0.25rem 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+} 
