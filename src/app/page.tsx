@@ -130,6 +130,25 @@ export default function Home() {
     );
   };
 
+  const experiences = [
+    {
+      title: "Software Development Engineering Intern",
+      company: "Amazon",
+      period: "Summer 2025",
+      description: "Upcoming internship at Amazon as a Software Development Engineering Intern.",
+      link: "https://www.amazon.com",
+      technologies: ["Software Development", "Cloud Computing", "AWS"]
+    },
+    {
+      title: "Course Instructor",
+      company: "University of Houston",
+      period: "SUMMER 2023",
+      description: "Designed and delivered a dynamic \"Introduction to Computer Science\" curriculum to 150 students, leveraging a variety of teaching techniques to accommodate diverse learning styles. Collaborated with fellow instructors and the Head of the STEM Department to innovate curriculum development and assessment strategies.",
+      link: "https://compucampuhd.com/",
+      technologies: ["Java", "Python", "Data Structures", "Hardware Engineering"]
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue via-[#0f1f3d] to-[#162a4a] text-slate-light p-6 md:p-12 lg:p-16">
       {/* Main Content Container */}
@@ -250,42 +269,44 @@ export default function Home() {
             >
               <div className="absolute -left-8 w-1 h-full bg-accent/20 rounded-full" />
               <div className="space-y-8 max-w-xl py-4">
-                <div className="group relative">
-                  <div className="text-slate text-sm tracking-widest uppercase mb-2 opacity-70">
-                    SUMMER 2023
-                  </div>
-                  <a 
-                    href="https://compucampuhd.com/"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    className="relative p-4 -mx-4 transition-all duration-300 bg-blue-light/50 hover:bg-blue-light rounded-xl border border-accent/10 block"
-                  >
-                    <div className="absolute inset-0 rounded-xl transition-opacity opacity-50 group-hover:opacity-100" style={{
-                      background: 'radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.06), transparent 40%)'
-                    }} />
-                    <div className="relative">
-                      <h3 className="text-white text-xl font-semibold group-hover:text-accent transition-colors mb-2 flex items-center gap-2">
-                        Course Instructor · University of Houston
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                          <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
-                        </svg>
-                      </h3>
-                      <p className="text-slate mt-2 mb-4 hover:text-slate-light transition-all duration-300 hover:text-shadow-glow">
-                        Designed and delivered a dynamic "Introduction to Computer Science" curriculum to 150 students, leveraging a variety of teaching techniques to accommodate diverse learning styles. Collaborated with fellow instructors and the Head of the STEM Department to innovate curriculum development and assessment strategies.
-                      </p>
-                      <div className="flex flex-wrap gap-2 mt-2">
-                        {['Java', 'Python', 'Data Structures', 'Hardware Engineering'].map((tech) => (
-                          <span
-                            key={tech}
-                            className="text-slate-light text-sm border border-accent rounded-full px-3 py-1 hover:bg-accent/10 transition-all duration-300"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
+                {experiences.map((experience, index) => (
+                  <div key={index} className="group relative">
+                    <div className="text-slate text-sm tracking-widest uppercase mb-2 opacity-70">
+                      {experience.period}
                     </div>
-                  </a>
-                </div>
+                    <a 
+                      href={experience.link}
+                      target="_blank"
+                      rel="noopener noreferrer" 
+                      className="relative p-4 -mx-4 transition-all duration-300 bg-blue-light/50 hover:bg-blue-light rounded-xl border border-accent/10 block"
+                    >
+                      <div className="absolute inset-0 rounded-xl transition-opacity opacity-50 group-hover:opacity-100" style={{
+                        background: 'radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.06), transparent 40%)'
+                      }} />
+                      <div className="relative">
+                        <h3 className="text-white text-xl font-semibold group-hover:text-accent transition-colors mb-2 flex items-center gap-2">
+                          {experience.title} · {experience.company}
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
+                          </svg>
+                        </h3>
+                        <p className="text-slate mt-2 mb-4 hover:text-slate-light transition-all duration-300 hover:text-shadow-glow">
+                          {experience.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {experience.technologies.map((tech) => (
+                            <span
+                              key={tech}
+                              className="text-slate-light text-sm border border-accent rounded-full px-3 py-1 hover:bg-accent/10 transition-all duration-300"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                ))}
               </div>
             </motion.div>
           </section>
