@@ -132,12 +132,20 @@ export default function Home() {
 
   const experiences = [
     {
+      title: "Software Engineering Intern",
+      company: "Datadog",
+      period: "Summer 2026",
+      description: "Upcoming internship at Datadog as a Software Engineering Intern.",
+      link: "https://www.datadoghq.com",
+      technologies: []
+    },
+    {
       title: "Software Development Engineering Intern",
       company: "Amazon",
       period: "Summer 2025",
-      description: "Upcoming internship at Amazon as a Software Development Engineering Intern.",
-      link: "https://www.amazon.com",
-      technologies: ["Software Development", "Cloud Computing", "AWS"]
+      description: "Redesigned a FHIR export system on AWS (Glue PySpark, Fargate, Step Functions) to boost throughput from 5 GB/hour to 4 TB/hour (800x) across 20+ TB of clinical data while cutting parsing ~95%, reducing compute cost 4x, and raising job success to 99.9% via dual-path workflows with caching, validation, and dynamic routing.",
+      link: "https://aws.amazon.com/health/gen-ai/",
+      technologies: ["Data Optimization", "Cloud Computing", "AWS", "Python"]
     },
     {
       title: "Course Instructor",
@@ -216,7 +224,7 @@ export default function Home() {
               </svg>
             </a>
             <a
-              href="/resume/resume.pdf"
+              href="/resume/latex-resume-2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate hover:text-accent transition-all duration-300 hover:text-shadow-glow flex items-center gap-2"
@@ -242,11 +250,11 @@ export default function Home() {
               
               <div className="space-y-6">
                 <p className="text-lg leading-relaxed text-slate relative hover:text-slate-light transition-all duration-300 hover:text-shadow-glow">
-                  I'm a computer science student at <span className="text-accent">Columbia University</span> passionate about building software that blends thoughtful design with solid engineering. My work spans <span className="text-accent">full-stack development</span> and <span className="text-accent">machine learning</span>, with a focus on performance, accessibility, and real-world impact.
+                  I'm a computer science student at <span className="text-accent">Columbia University</span> passionate about building software that blends thoughtful design with solid engineering. My work spans <span className="text-accent">full-stack development</span> and <span className="text-accent">machine learning</span>, with a focus on performance, finance, and real-world impact.
                 </p>
 
                 <p className="text-lg leading-relaxed text-slate relative hover:text-slate-light transition-all duration-300 hover:text-shadow-glow">
-                  I've <span className="text-accent">taught</span> computer science to over <span className="text-accent">150 students</span> as a course instructor, built neural networks and password managers, and developed web apps that connect users to live data. I enjoy working at the intersection of backend logic and frontend design.
+                  I've <span className="text-accent">taught</span> computer science to over <span className="text-accent">150 students</span> as a course instructor, redesigned AWS systems at <span className="text-accent">Amazon</span> to achieve 800× performance improvements, and built neural networks and password managers. I enjoy working at the intersection of backend logic and frontend design.
                 </p>
 
                 <p className="text-lg leading-relaxed text-slate relative hover:text-slate-light transition-all duration-300 hover:text-shadow-glow">
