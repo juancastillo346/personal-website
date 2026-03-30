@@ -170,7 +170,7 @@ export default function Sidebar({ activeSection, onSectionSelect }: SidebarProps
             transition={{ duration: 0.55 }}
             className="space-y-5 lg:space-y-6"
           >
-            <h1 className="font-display text-5xl leading-none tracking-tight text-ink sm:text-6xl lg:text-7xl">
+            <h1 className="text-5xl leading-none tracking-tight text-ink sm:text-6xl lg:text-7xl">
               {hero.name}
             </h1>
             <p className="max-w-md text-base leading-8 text-muted sm:text-lg">

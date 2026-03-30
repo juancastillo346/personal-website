@@ -48,7 +48,7 @@ export const navItems: NavItem[] = [
 
 export const aboutParagraphs = [
   "I'm a computer science student at Columbia University passionate about building software that blends thoughtful design with solid engineering. My work spans full-stack development and machine learning, with a focus on performance, finance, and real-world impact.",
-  "I've taught computer science to over 150 students as a course instructor, redesigned AWS systems at Amazon to achieve 800x performance improvements, and built neural networks and password managers. I enjoy working at the intersection of backend logic and frontend design.",
+  "I've taught computer science to over 150 students as an instructor, redesigned AWS systems at Amazon to achieve 800x performance improvements, and built neural networks and password managers. I enjoy working at the intersection of backend logic and frontend design.",
   "Outside of coding, I'm a proud member of SHPE and ColorStack, and I'm constantly learning, whether it's a new tech stack or a better way to write maintainable code.",
   "When I'm not programming, you'll probably find me solving my Rubik's Cube or playing video games to recharge.",
 ];
@@ -72,7 +72,7 @@ export const experiences: ExperienceItem[] = [
     technologies: ['Data Optimization', 'Cloud Computing', 'AWS', 'Python'],
   },
   {
-    title: 'Course Instructor',
+    title: 'Instructor',
     company: 'University of Houston',
     period: 'SUMMER 2023',
     description:
