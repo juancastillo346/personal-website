@@ -54,7 +54,7 @@ function DesktopSectionNavLink({
       className="group flex items-center"
     >
       <motion.div
-        className="h-px origin-left bg-accent"
+        className="h-px origin-left bg-accent/20"
         initial={{ width: '40px', opacity: 0.3 }}
         animate={{
           width: activeSection === section ? '120px' : '40px',
