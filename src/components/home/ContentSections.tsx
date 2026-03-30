@@ -8,7 +8,6 @@ export default function ContentSections() {
       <SectionBlock
         id="about"
         eyebrow="About"
-        intro="I like work that is technically rigorous, easy to use, and grounded in measurable impact."
         index="01"
       >
         <div className="max-w-4xl space-y-5">
