@@ -27,7 +27,7 @@ export default function SectionBlock({
           {index}
         </div>
         <div className="relative hidden md:block">
-          <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-gradient-to-b from-accent/35 via-accent/18 to-transparent" />
+          <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-accent/20" />
         </div>
         <div className="space-y-10">
           <div className="max-w-2xl space-y-4">
