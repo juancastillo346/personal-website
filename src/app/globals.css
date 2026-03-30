@@ -18,7 +18,7 @@ html {
 body {
   color: rgb(var(--ink-rgb));
   background:
-    linear-gradient(180deg, rgb(248, 251, 255) 0%, rgb(244, 248, 255) 28%, rgb(232, 240, 253) 64%, rgb(219, 230, 249) 100%);
+    linear-gradient(180deg, rgb(226, 236, 252) 0%, rgb(236, 244, 255) 28%, rgb(243, 248, 255) 64%, rgb(248, 251, 255) 100%);
   font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
