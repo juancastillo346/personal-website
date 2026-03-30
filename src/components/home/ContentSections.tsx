@@ -14,30 +14,39 @@ export default function ContentSections() {
         <div className="max-w-4xl space-y-5">
           <p className="text-base leading-8 text-muted sm:text-lg">
             I&apos;m a computer science student at{' '}
-            <span className="font-medium text-accent">Columbia University</span> passionate about
-            building software that blends thoughtful design with solid engineering. My work spans{' '}
-            <span className="font-medium text-accent">full-stack development</span> and{' '}
-            <span className="font-medium text-accent">machine learning</span>, with a focus on
-            performance, finance, and real-world impact.
+            <span className="font-medium text-accent">Columbia University</span> who enjoys
+            building software that&apos;s <span className="font-medium text-accent">clean, useful, and grounded in real impact</span>.
           </p>
           <p className="text-base leading-8 text-muted sm:text-lg">
-            I&apos;ve <span className="font-medium text-accent">taught</span> computer science to
-            over <span className="font-medium text-accent">150 students</span> as a course
-            instructor, redesigned AWS systems at{' '}
-            <span className="font-medium text-accent">Amazon</span> to achieve 800x performance
-            improvements, and built neural networks and password managers. I enjoy working at the
-            intersection of backend logic and frontend design.
+            I&apos;m interested in <span className="font-medium text-accent">full-stack development</span> and{' '}
+            <span className="font-medium text-accent">machine learning</span>, especially when
+            they come together in projects involving{' '}
+            <span className="font-medium text-accent">performance</span>,{' '}
+            <span className="font-medium text-accent">finance</span>, or{' '}
+            <span className="font-medium text-accent">real-world problem solving</span>. I care a
+            lot about making things work well technically, but also making them feel{' '}
+            <span className="font-medium text-accent">easy and natural to use</span>.
           </p>
           <p className="text-base leading-8 text-muted sm:text-lg">
-            Outside of coding, I&apos;m a proud member of{' '}
-            <span className="font-medium text-accent">SHPE</span> and{' '}
-            <span className="font-medium text-accent">ColorStack</span>, and I&apos;m constantly
-            learning, whether it&apos;s a new tech stack or a better way to write maintainable
-            code.
+            I&apos;ve taught computer science to{' '}
+            <span className="font-medium text-accent">over 150 students</span>, worked on AWS
+            systems at <span className="font-medium text-accent">Amazon</span> that improved
+            performance by <span className="font-medium text-accent">800×</span>, and built
+            everything from <span className="font-medium text-accent">neural networks</span> to{' '}
+            <span className="font-medium text-accent">finance dashboards</span>. I like the
+            challenge of taking complex ideas and turning them into something practical, reliable,
+            and user-friendly.
           </p>
           <p className="text-base leading-8 text-muted sm:text-lg">
-            When I&apos;m not programming, you&apos;ll probably find me solving my Rubik&apos;s
-            Cube or playing video games to recharge.
+            I&apos;m also a proud member of <span className="font-medium text-accent">SHPE</span>{' '}
+            and <span className="font-medium text-accent">ColorStack</span>, and I&apos;m always
+            learning, whether that means picking up a new technology or just finding a cleaner way
+            to build.
+          </p>
+          <p className="text-base leading-8 text-muted sm:text-lg">
+            Outside of tech, I like solving my{' '}
+            <span className="font-medium text-accent">Rubik&apos;s Cube</span> and watching a lot
+            of movies.
           </p>
         </div>
       </SectionBlock>
