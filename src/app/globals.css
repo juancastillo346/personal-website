@@ -3,46 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
-  --blue: #0f172a;
-  --blue-light: #1e293b;
-  --slate: #64748b;
-  --slate-light: #94a3b8;
-  --white: #ffffff;
+  --paper-rgb: 236, 243, 255;
+  --paper-strong-rgb: 248, 251, 255;
+  --ink-rgb: 12, 22, 44;
+  --muted-rgb: 84, 103, 138;
+  --accent-rgb: 67, 110, 214;
+  --accent-deep-rgb: 28, 63, 132;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  color: rgb(var(--ink-rgb));
+  background:
+    linear-gradient(145deg, rgb(248, 251, 255) 0%, rgb(236, 243, 255) 42%, rgb(221, 232, 250) 100%);
   font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
-.nav-link {
-  color: var(--slate);
-  transition: color 0.2s ease-in-out;
+body::before {
+  content: none;
 }
 
-.nav-link:hover {
-  color: var(--white);
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-radial-gradient(circle at center, rgba(var(--accent-rgb), 0.12) 0 2px, rgba(var(--accent-rgb), 0.04) 2px 3px, transparent 3px 20px),
+    linear-gradient(rgba(var(--accent-deep-rgb), 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--accent-deep-rgb), 0.045) 1px, transparent 1px);
+  background-size: auto, 120px 120px, 120px 120px;
+  background-position: center center, center center, center center;
+  opacity: 0.34;
+  filter: blur(4px);
 }
 
-.section-heading {
-  color: var(--white);
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+::selection {
+  background: rgba(var(--accent-rgb), 0.2);
+  color: rgb(var(--ink-rgb));
 }
 
-.tech-tag {
-  color: var(--slate-light);
-  background-color: transparent;
-  font-family: monospace;
-  font-size: 0.85rem;
-  padding: 0.25rem 0;
+@layer base {
+  * {
+    border-color: rgba(var(--ink-rgb), 0.08);
+  }
+
+  body {
+    @apply font-sans;
+  }
 }
 
 @layer utilities {
@@ -50,10 +64,3 @@ body {
     text-wrap: balance;
   }
 }
-
-.gradient-text {
-  background: linear-gradient(45deg, #3b82f6, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-} 
