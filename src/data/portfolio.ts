@@ -84,11 +84,11 @@ export const experiences: ExperienceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
-    title: 'Password Manager',
+    title: 'Spending Visualization Dashboard',
     description:
-      'GUI-based password manager for secure storage and management of encrypted passwords. Developed a user-friendly interface with robust security features and seamless data management capabilities.',
-    link: 'https://github.com/juancastillo346/password-manager',
-    technologies: ['Java', 'GUI', 'Security'],
+      'Interactive spending dashboard that visualizes banking transactions in a Sankey-style flow, helping users explore where their money goes across categories and accounts.',
+    link: 'https://github.com/juancastillo346/Spending-Sankey-Diagram',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Prisma', 'Plaid Banking'],
   },
   {
     title: 'Neural Network',
@@ -98,11 +98,11 @@ export const projects: ProjectItem[] = [
     technologies: ['Python', 'Neural Networks', 'Machine Learning'],
   },
   {
-    title: 'Weather App',
+    title: 'Virtual Keyboard with Oscillators & Waveforms',
     description:
-      'Responsive web application that retrieves and displays real-time weather statistics, featuring a clean interface and seamless API integration.',
-    link: 'https://github.com/juancastillo346/weather-app',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+      'Browser-based computational sound project that lets users play a virtual keyboard while experimenting with oscillators and waveform generation.',
+    link: 'https://juancastillo346.github.io/Computational-Sound/',
+    technologies: ['JavaScript', 'HTML'],
   },
   {
     title: 'Stock Web Scraper',
@@ -110,6 +110,34 @@ export const projects: ProjectItem[] = [
       'Java application that automates data extraction from financial websites, demonstrating efficient web scraping and data parsing capabilities.',
     link: 'https://github.com/juancastillo346/stock-web-scraper',
     technologies: ['Java', 'Jsoup', 'Web Scraping'],
+  },
+  {
+    title: 'Password Manager',
+    description:
+      'GUI-based password manager for secure storage and management of encrypted passwords. Developed a user-friendly interface with robust security features and seamless data management capabilities.',
+    link: 'https://github.com/juancastillo346/password-manager',
+    technologies: ['Java', 'GUI', 'Security'],
+  },
+  {
+    title: 'Weather App',
+    description:
+      'Responsive web application that retrieves and displays real-time weather statistics, featuring a clean interface and seamless API integration.',
+    link: 'https://github.com/juancastillo346/weather-app',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    title: 'Study Timer',
+    description:
+      'Swift-based productivity timer designed around focused study sessions, inspired by Pomodoro-style time management.',
+    link: 'https://github.com/juancastillo346/PomodoroBar',
+    technologies: ['Swift'],
+  },
+  {
+    title: 'Messaging App',
+    description:
+      'Real-time messaging application built for fast, responsive conversation flows with Firebase-backed data and a React-based interface.',
+    link: 'https://github.com/juancastillo346/UI-Final-Project-Code',
+    technologies: ['React', 'Firebase', 'Next.js'],
   },
 ];
 
