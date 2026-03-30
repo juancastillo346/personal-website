@@ -20,7 +20,7 @@ export default function SectionBlock({
   return (
     <section
       id={id}
-      className="scroll-mt-24 border-t border-ink/10 py-14 first:border-t-0 first:pt-0 md:py-16"
+      className="scroll-mt-24 border-t border-accent/20 py-14 first:border-t-0 first:pt-0 md:py-16"
     >
       <div className="grid gap-6 md:grid-cols-[104px_56px_1fr] md:gap-8">
         <div className="text-xs font-medium uppercase tracking-[0.32em] text-muted">

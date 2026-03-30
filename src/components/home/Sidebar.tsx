@@ -54,11 +54,11 @@ function DesktopSectionNavLink({
       className="group flex items-center"
     >
       <motion.div
-        className="h-px origin-left bg-accent/20"
-        initial={{ width: '40px', opacity: 0.3 }}
+        className="h-[2px] origin-left bg-accent"
+        initial={{ width: '56px', opacity: 0.45 }}
         animate={{
-          width: activeSection === section ? '120px' : '40px',
-          opacity: activeSection === section ? 1 : 0.3,
+          width: activeSection === section ? '140px' : '56px',
+          opacity: activeSection === section ? 1 : 0.45,
         }}
         transition={{
           duration: 0.3,
