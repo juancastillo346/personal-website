@@ -91,18 +91,25 @@ export const projects: ProjectItem[] = [
     technologies: ['Next.js', 'React', 'TypeScript', 'Prisma', 'Plaid Banking'],
   },
   {
+    title: 'Market Analysis & Portfolio Optimization',
+    description:
+      'Data-driven finance project exploring market behavior and portfolio optimization through quantitative analysis, statistical modeling, and investment visualization.',
+    link: 'https://github.com/juancastillo346/market-analysis',
+    technologies: ['Python', 'Jupyter Notebook', 'NumPy', 'Pandas', 'SciPy', 'Matplotlib', 'yFinance'],
+  },
+  {
+    title: 'FIG Magazine Fashion Website',
+    description:
+      'Fashion-focused website experience with a polished frontend built for editorial-style presentation and modern browsing interactions.',
+    link: 'https://fig-magazine.vercel.app/',
+    technologies: ['React', 'TypeScript'],
+  },
+  {
     title: 'Neural Network',
     description:
       'Python-based neural network for handwritten digit recognition, achieving 85% accuracy on the MNIST dataset through implementation of forward and backward propagation algorithms.',
     link: 'https://github.com/juancastillo346/neural-network',
     technologies: ['Python', 'Neural Networks', 'Machine Learning'],
-  },
-  {
-    title: 'Virtual Keyboard with Oscillators & Waveforms',
-    description:
-      'Browser-based computational sound project that lets users play a virtual keyboard while experimenting with oscillators and waveform generation.',
-    link: 'https://juancastillo346.github.io/Computational-Sound/',
-    technologies: ['JavaScript', 'HTML'],
   },
   {
     title: 'Stock Web Scraper',
@@ -119,25 +126,18 @@ export const projects: ProjectItem[] = [
     technologies: ['Java', 'GUI', 'Security'],
   },
   {
-    title: 'Weather App',
-    description:
-      'Responsive web application that retrieves and displays real-time weather statistics, featuring a clean interface and seamless API integration.',
-    link: 'https://github.com/juancastillo346/weather-app',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-  },
-  {
-    title: 'Study Timer',
-    description:
-      'Swift-based productivity timer designed around focused study sessions, inspired by Pomodoro-style time management.',
-    link: 'https://github.com/juancastillo346/PomodoroBar',
-    technologies: ['Swift'],
-  },
-  {
     title: 'Messaging App',
     description:
       'Real-time messaging application built for fast, responsive conversation flows with Firebase-backed data and a React-based interface.',
     link: 'https://github.com/juancastillo346/UI-Final-Project-Code',
     technologies: ['React', 'Firebase', 'Next.js'],
+  },
+  {
+    title: 'Virtual Keyboard with Oscillators & Waveforms',
+    description:
+      'Browser-based computational sound project that lets users play a virtual keyboard while experimenting with oscillators and waveform generation.',
+    link: 'https://juancastillo346.github.io/Computational-Sound/',
+    technologies: ['JavaScript', 'HTML'],
   },
 ];
 

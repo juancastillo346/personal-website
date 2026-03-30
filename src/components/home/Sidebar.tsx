@@ -160,6 +160,9 @@ function SocialLink({
 }
 
 export default function Sidebar({ activeSection, onSectionSelect }: SidebarProps) {
+  const [firstName, ...lastNameParts] = hero.name.split(' ');
+  const lastName = lastNameParts.join(' ');
+
   return (
     <div className="lg:h-screen lg:w-[320px] xl:w-[360px]">
       <div className="flex h-full flex-col justify-between gap-12 rounded-[2rem] border border-ink/10 bg-white/60 p-6 shadow-paper backdrop-blur-sm md:p-8 lg:fixed lg:top-10 lg:h-[calc(100vh-5rem)] lg:w-[320px] lg:gap-16 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:backdrop-blur-none xl:w-[360px]">
@@ -170,9 +173,17 @@ export default function Sidebar({ activeSection, onSectionSelect }: SidebarProps
             transition={{ duration: 0.55 }}
             className="space-y-5 lg:space-y-6"
           >
-            <h1 className="text-5xl leading-none tracking-tight text-ink sm:text-6xl lg:text-7xl">
-              {hero.name}
-            </h1>
+            <div className="relative">
+              <div className="absolute left-2 top-8 h-16 w-28 rounded-full bg-accent/10 blur-3xl sm:h-20 sm:w-36 lg:top-10" />
+              <h1 className="relative text-5xl leading-[0.88] tracking-[-0.07em] text-ink sm:text-6xl lg:text-7xl">
+                <span className="block font-light text-ink/95">{firstName}</span>
+                {lastName ? (
+                  <span className="block font-light text-transparent bg-clip-text bg-gradient-to-r from-ink via-accent-deep to-accent">
+                    {lastName}
+                  </span>
+                ) : null}
+              </h1>
+            </div>
             <p className="max-w-md text-base leading-8 text-muted sm:text-lg">
               {hero.summary}
             </p>
